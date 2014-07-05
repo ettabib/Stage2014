@@ -1,0 +1,30 @@
+;; RefTeX parse info file
+;; File: /Users/mohammad/Documents/MyProject/Stage2014/doc/latex/AIGDataSpreads.tex
+;; User: mohammad (Mohammad)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi nil)
+
+(bibview-cache)
+
+(master-dir . "/Users/mohammad/Documents/MyProject/Stage2014/doc/latex/")
+
+(label-numbers)
+
+(bof "/Users/mohammad/Documents/MyProject/Stage2014/doc/latex/AIGDataSpreads.tex")
+
+(toc "toc" "    1 AIG CDS data over 2005 & 2010" "/Users/mohammad/Documents/MyProject/Stage2014/doc/latex/AIGDataSpreads.tex" nil 2 "1" "\\section{AIG CDS data over 2005 & 2010}" 2)
+
+("sec:aig-cds-data" "s" nil "/Users/mohammad/Documents/MyProject/Stage2014/doc/latex/AIGDataSpreads.tex" nil "")
+
+(toc "toc" "    1 AIG CDS data over 2005 & 2010" "/Users/mohammad/Documents/MyProject/Stage2014/doc/latex/AIGDataSpreads.tex" nil 2 "1" "\\section{AIG CDS data over 2005 & 2010}" 2)
+
+(eof "/Users/mohammad/Documents/MyProject/Stage2014/doc/latex/AIGDataSpreads.tex")
+))
+
