@@ -27,6 +27,7 @@ update:rapport.tex
 	@-bibtex biblio.bib > /dev/null 2> /dev/null
 	@-cecho -green "-------< Compiling bibtex done >-------"	
 	@-echo " "
+	@date | awk '{print $5}'
 
 
 clean:

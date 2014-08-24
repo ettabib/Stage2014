@@ -35,7 +35,6 @@ Y = [Qmin(2:(n+1)) , Qmax(1:n)];
 figure
 stairs(Y)
 
-
 %% Date where There is AOA
 DateAOA = 0;
 AOA = false;
@@ -51,3 +50,21 @@ for i=2:size(data,1),
    end
 end
 DateAOA + 1
+
+%% Scatter for the cotation 18/08/2005
+[Qmin,Qmax] = Proba_Survie(1:10,data(4,(2:11))' * bp,Recovery,Interest);
+Y = [Qmin(2:(n+1)) , Qmax(1:n)];
+figure
+stairs(Y)
+title('Scatter for the cotation 18/08/2005');
+legend('Qmin','Qmax');
+
+%% Scatter for the cotation 27/11/2007
+[Qmin,Qmax] = Proba_Survie(1:10,data(597,(2:11))' * bp,Recovery,Interest);
+Y = [Qmin(2:(n+1)) , Qmax(1:n)];
+figure
+stairs(Y)
+title('Scatter for the cotation 27/11/2007');
+legend('Qmin','Qmax');
+
+
