@@ -1,0 +1,131 @@
+
+\section{Credit default swap (CDS)}
+\label{sec:credit-default-swap}
+
+In the credit  derivative market, the credit  default swaps takes a  big place. A
+CDS contains  one only  underlying, it  allowed the  market investors  to manage
+dynamically the underlying default risk. \\
+
+A CDS looks like  an interest rate swap, because there  is an exchanging floating
+payment and fixed  payment between the buyer  and the seller. A  CDS carry the
+advantage of an insurance product witch give  to his owner a protection over the
+underlying default risk .\\
+
+the  buyer  of  the  protection  pays a  fixed  amount  \textit{s}  called  the
+\textit{spread},   at  a   regular  and   prefixed  dates   (  $t_1,t_2,   \dots
+,T$)\footnote{In   the  market,   the   spreads  are   issued   evry  3   months
+  ($t_{k+1}-t_k$=3 months)}, until the default date $\tau$
+if the default  occurs before the maturity  $T$. Else, he will  pays the previous
+amount until $T$. \\
+
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \draw [xshift=-6cm] (6 cm,1pt) -- (6 cm, -3pt) node[anchor=north] {$t_0$};
+    \draw [xshift=-6cm] (8 cm,1pt) -- (8 cm, -3pt) node[anchor=north] {$t_1$};
+    \draw [xshift=-6cm] (12 cm,1pt) -- (12 cm, -3pt) node[anchor=north] {$t_i$};
+    \draw [xshift=-6cm] (14 cm,1pt) -- (14 cm, -3pt) node[anchor=north] {$t_{i+1}$};
+    \draw [xshift=-6cm] (18 cm,1pt) -- (18 cm, -3pt) node[anchor=north] {$T$};
+
+    \draw [->,xshift=-6cm] (8 cm, 3pt) -- (8 cm, 0.5cm) node[anchor=south] {$s$};
+    \draw [->,xshift=-6cm] (12 cm, 3pt) -- (12 cm, 0.5cm) node[anchor=south] {$s$};
+    \draw [->,xshift=-6cm] (14 cm, 3pt) -- (14 cm, 0.5cm) node[anchor=south] {$s$};
+    \draw [->,xshift=-6cm] (18 cm, 3pt) -- (18 cm, 0.5cm) node[anchor=south] {$s$};
+
+    \draw[xshift=-6cm]          (6,0)    -- (9,0);
+    \draw[xshift=-6cm,dashed]   (9,0)    -- (11.5,0);
+    \draw[xshift=-6cm]          (11.5,0) -- (14.5,0);
+    \draw[xshift=-6cm,dashed]   (14.5,0) -- (17.5,0);
+    \draw[->,xshift=-6cm]       (17.5,0) -- (18.5,0);
+  \end{tikzpicture}
+  \caption{In the case of no default}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+
+    \draw [xshift=-6cm] (6 cm,1pt) -- (6 cm, -3pt) node[anchor=north] {$t_0$};
+    \draw [xshift=-6cm] (8 cm,1pt) -- (8 cm, -3pt) node[anchor=north] {$t_1$};
+    \draw [xshift=-6cm] (12 cm,1pt) -- (12 cm, -3pt) node[anchor=north] {$t_i$};
+    \draw [xshift=-6cm] (13 cm,1pt) -- (13 cm, -3pt) node[anchor=north] {$\tau$};
+    \draw [xshift=-6cm] (18 cm,1pt) -- (18 cm, -3pt) node[anchor=north] {$T$};
+
+
+    \draw [->,xshift=-6cm] (8 cm, 3pt) -- (8 cm, 1cm) node[anchor=south] {$s$};
+    \draw [->,xshift=-6cm] (12 cm, 3pt) -- (12 cm, 1cm) node[anchor=south] {$s$};
+    \draw [->,xshift=-6cm,red] (13 cm, -3pt) -- (13 cm, -1cm) node[anchor=north] {$1-R$};
+
+    \draw[xshift=-6cm]          (6,0)    -- (9,0);
+    \draw[xshift=-6cm,dashed]   (9,0)    -- (11.5,0);
+    \draw[xshift=-6cm]          (11.5,0) -- (13,0);
+    \draw[->,xshift=-6cm]       (17.5,0) -- (18.5,0);
+
+    \node [cross out,draw=red,xshift=-6cm] at (13,3pt) {default};
+  \end{tikzpicture}
+  \caption{In the case of occuring default ($\tau < T$)}
+\end{figure}
+
+
+The  floating  part payed  by  the  protection  seller  depends on  the  default
+condition of  the underlying before the  maturity.  In the case  of default, the
+seller will  refund to the  buyer a  part $R$ of  the nominal, depending  on the
+recovery rate $R$ of  the underlying. In the case of no  defect, the seller will
+pay nothing.\\
+
+The recovery rate will remain unknown until the maturity date. Not easy to estimate,
+he varies depending on the company.\\
+
+The CDS's  price or  the spread  is determined  at the  initial date  ($t_0$) by
+equalizing the expected value of the two previous cash flows.\\
+
+Let's specify first some notations :
+\begin{description}
+\item[$\tau$] the underlying default date.
+\item[$R$] his recovery rate wich is a predictable process of $[0,1]$
+\item[$T_0$] =0 the CDS signature date
+\item[$T$] the maturity of the CDS
+\item[$t_i$] The  payment dates  of the buyer  where $\Delta  t=t_i-t_{i-1}$ are
+  equal $\forall i \in 1,\dots,n$
+\item[$\beta(t)$] an index in which $t\in[t_{\beta(t)-1},t_{\beta(t)}]$.
+\item[r] the short rate and $D(t,T)=\exp(-\int_t^Tr_sds)$
+\end{description}
+
+For the seller, the future cash flow that he will \textbf{receive} at $t<T\wedge\tau$ :
+\[
+s\left\{(T_{\beta(t)}-t)P^D(t,T_{\beta(t)})\mathds{1}_{\tau>T_{\beta(t)}}+
+\sum^n_{i=\beta(t)+1}\Delta                                                    t
+P^D(t,t_i)\mathds{1}_{\tau>t_i}+(\tau-T_{\beta(\tau)-1}P^D(t,\tau)\mathds{1}_{\tau
+  \leq
+  T})\right\}
+\]
+
+this formula can be approximated by the continuous flow
+\[
+\int_t^{T\wedget}sP^D(t,u)du
+\]
+
+Instead the seller will pay 
+\[
+\mathds{1}_{\tau \leq T}P^D(t,\tau)(1-R)
+\]
+We have then at $t=t_0=0$ the following result :
+
+\begin{equation}
+  \label{eq:1}
+s\mathbb{E}_{\mathbb{Q}}\left[\mathds{1}_{\tau \leq T}(1-R)P^D(t_0,\tau)\right]=
+\mathbb{E}_\mathbb{Q}\left[\int_t^T\mathds{1}_{\tau>u}P^D(t,u)du\right]
+  
+\end{equation}
+
+
+where $\mathbb{Q}$ is a free-risk probability.
+
+
+
+
+
+
+
+

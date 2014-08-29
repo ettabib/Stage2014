@@ -1,4 +1,4 @@
-\documentclass{Math}
+\message{ !name(rapport.tex)}\documentclass{Math}
 \usepackage{sidecap}
 \usepgflibrary{shapes.misc}
 \usepackage[pdftex]{graphicx}
@@ -8,6 +8,9 @@
 \newcommand{\Lra}{\Longrightarrow}
 \begin{document}
 
+\message{ !name(rapport.tex) !offset(-3) }
+
+
 \input{title}
 
 \tableofcontents
@@ -15,7 +18,7 @@
 \include{Introduction}
 \include{CDS}
 \include{AdmissibleCurve}
-%\include{AIGDataSpreads}
+\include{AIGDataSpreads}
 
 \addcontentsline{toc}{section}{\listfigurename}
 \listoffigures
@@ -27,3 +30,5 @@
 \bibliography{biblio}
 
 \end{document}
+
+\message{ !name(rapport.tex) !offset(-34) }
