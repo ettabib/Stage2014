@@ -49,7 +49,7 @@ for i=2:size(data,1),
        AOA = false ;
    end
 end
-DateAOA + 1
+DateAOA = DateAOA + 1;
 
 %% Scatter for the cotation 18/08/2005
 [Qmin,Qmax] = Proba_Survie(1:10,data(4,(2:11))' * bp,Recovery,Interest);
@@ -67,4 +67,31 @@ stairs(Y)
 title('Scatter for the cotation 27/11/2007');
 legend('Qmin','Qmax');
 
+%% Curves evolution
+TabCurveQmax = zeros(size(data,1)-1,11);
+TabCurveQmin = zeros(size(data,1)-1,11);
+TabDiff = zeros(size(data,1)-1,11);
+NormQmax     = zeros(size(data,1));
+% figure
+for i=2:(size(data,1)),
+   [Qmin,Qmax] = Proba_Survie(1:10,data(i,(2:11))' * bp,Recovery,Interest);
+   TabCurveQmax(i-1,:) = Qmax;
+   TabCurveQmin(i-1,:) = Qmin;
+   TabDiff(i-1,:)      = Qmax - Qmin; 
+%    Y = [Qmin(2:(n+1)) , Qmax(1:n)];
+%    stairs(Y); 
+    %NormQmax(i-1) = abs(sum(abs(Qmax(1:10)-Qmax(2:11))) - mean(Qmax)); 
+%     NormQmax(i-1) =  var(Qmax,0,1);
+%      NormQmax(i-1) =  mean(Qmax,1);
+    NormQmax(i-1) = mean(Qmax - Qmin);
+%     NormQmax(i-1) = mean(data(i,(2:11)));
+end
+% Define the norm : N(C) = sum d - mean (d)
 
+% MeanQmax = mean(TabCurveQmax,1);  
+% MeanQmin = mean(TabCurveQmin,1);
+% Y = [MeanQmin(2:(n+1)) , MeanQmax(1:n)];
+
+figure
+% plot(TabCurveQmax);
+plot(NormQmax(1:1336));

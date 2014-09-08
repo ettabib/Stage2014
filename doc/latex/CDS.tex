@@ -2,7 +2,7 @@
 \section{Credit default swap (CDS)}
 \label{sec:credit-default-swap}
 
-In the credit  derivative market, the credit  default swaps takes a  big place. A
+\qquad In the credit derivative market, the credit default swaps takes a big place. A
 CDS contains  one only  underlying, it  allowed the  market investors  to manage
 dynamically the underlying default risk. \\
 
@@ -11,7 +11,29 @@ payment and fixed  payment between the buyer  and the seller. A  CDS carry the
 advantage of an insurance product witch give  to his owner a protection over the
 underlying default risk .\\
 
-the  buyer  of  the  protection  pays a  fixed  amount  \textit{s}  called  the
+The CDS  contract involve 3  entities : the \textit{buyer},  the \textit{seller}
+and the \textit{reference entity}. The seller  of a CDS will garanty, a recovery
+$1-R$ of the nominal,  in a period of time $T$  called the \textit{maturity}, if
+the reference entity fails.\\
+\begin{center}
+  \begin{tikzpicture}
+  
+    \coordinate  (a) at  (0,0); \coordinate  (b)  at (0,1);  \coordinate (c)  at
+    (1,1); \coordinate (d)  at (1,0); \coordinate (e) at  (5,0); \coordinate (f)
+    at (6,0);  \coordinate (g) at  (6,1); \coordinate (h) at  (5,1); \coordinate
+    (i) at (3,3);
+
+    \draw[color=blue]   (a)    --   (b);    \draw[color=blue]   (b)    --   (c);
+    \draw[color=blue]   (c)    --   (d);    \draw[color=blue]   (d)    --   (a);
+    \draw[color=blue]   (e)    --   (f);    \draw[color=blue]   (f)    --   (g);
+    \draw[color=blue] (g) -- (h); \draw[color=blue] (h) -- (e);
+
+    \draw[color=blue]  (i)   ellipse  [x  radius=1.5cm,  y   radius=0.5cm]  node
+    {seller};
+
+  \end{tikzpicture}
+\end{center}
+Instead, the buyer of the protection pays a fixed amount \textit{s} called the
 \textit{spread},   at  a   regular  and   prefixed  dates   (  $t_1,t_2,   \dots
 ,T$)\footnote{In   the  market,   the   spreads  are   issued   evry  3   months
   ($t_{k+1}-t_k$=3 months)}, until the default date $\tau$

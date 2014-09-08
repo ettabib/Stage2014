@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.19)  29 AUG 2014 10:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.19)  7 SEP 2014 20:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1047,6 +1047,10 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 shapes.misc.code.tex
 File: pgflibraryshapes.misc.code.tex 2008/10/07 v2.10 (rcs-revision 1.3)
 )
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2009/09/04 v2.10 (rcs-revision 1.6)
+)
 
 ! LaTeX Error: Option clash for package graphicx.
 
@@ -1054,7 +1058,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5 \newcommand
+l.6 \newcommand
                {\HRule}{\rule{\linewidth}{0.5mm}}
 The package graphicx has already been loaded with options:
   []
@@ -1065,23 +1069,23 @@ Adding the global options:
 to your \documentclass declaration may fix this.
 Try typing  <return>  to proceed.
 
-(./rapport.aux (./Introduction.aux) (./CDS.aux) (./AdmissibleCurve.aux))
+(./rapport.aux (./CDS.aux) (./AdmissibleCurve.aux) (./AIGDataSpreads.aux))
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1117,7 +1121,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 9.
+(lastpage)             ! on input line 10.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/ms/ragged2e.sty
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
@@ -1146,7 +1150,7 @@ LaTeX Info: Redefining \selectfont on input line 126.
 ABD: EveryShipout initializing macros
 \c@lstlisting=\count167
 \AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring OFF on input line 9.
+Package hyperref Info: Link coloring OFF on input line 10.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1156,9 +1160,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count168
 )
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
+LaTeX Info: Redefining \ref on input line 10.
+LaTeX Info: Redefining \pageref on input line 10.
+LaTeX Info: Redefining \nameref on input line 10.
 
 (./rapport.out) (./rapport.out)
 \@outlinefile=\write5
@@ -1199,7 +1203,7 @@ LaTeX Info: Redefining \nameref on input line 9.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./title.tex <./isfa.png, id=56, 301.125pt x 299.1175pt>
+(./title.tex <./isfa.png, id=45, 301.125pt x 299.1175pt>
 File: ./isfa.png Graphic file (type png)
  <use ./isfa.png>
 Package pdftex.def Info: ./isfa.png used on input line 3.
@@ -1230,54 +1234,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.15 \include{Introduction}
-                            [1]
-\openout2 = `Introduction.aux'.
-
- (./Introduction.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--21
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 26.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--48
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--55
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--65
-
- []
-
-[2
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 66--72
-
- []
-
-) [3]
+l.17 \include{CDS}
+                   [1]
 \openout2 = `CDS.aux'.
 
  (./CDS.tex
@@ -1291,35 +1249,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--13
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--20
+Underfull \hbox (badness 10000) in paragraph at lines 14--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--76
+Underfull \hbox (badness 10000) in paragraph at lines 36--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
+Underfull \hbox (badness 10000) in paragraph at lines 93--98
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
-
- []
-
-[4
-
+[2
 
 ]
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 97.
- (/usr/local/texlive/2013/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 119.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
 ! Undefined control sequence.
-l.106 \int_t^{T\wedget
+l.128 \int_t^{T\wedget
                       }sP^D(t,u)du
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1330,7 +1292,7 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.119 
+l.141 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1338,7 +1300,7 @@ you left one out. Proceed, with fingers crossed.
 ! Display math should end with $$.
 <to be read again> 
                    \par 
-l.119 
+l.141 
       
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -1350,7 +1312,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.120 \end{equation}
+l.142 \end{equation}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1359,7 +1321,7 @@ or  <return>  to continue without it.
 ! You can't use `\eqno' in vertical mode.
 \endmathdisplay@a ...\df@tag \@empty \else \veqno 
                                                   \alt@tag \df@tag \fi \ifx ...
-l.120 \end{equation}
+l.142 \end{equation}
                     
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1369,7 +1331,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.120 \end{equation}
+l.142 \end{equation}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1380,12 +1342,12 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.120 \end{equation}
+l.142 \end{equation}
                     
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
-) [5]
+) [3]
 \openout2 = `AdmissibleCurve.aux'.
 
  (./AdmissibleCurve.tex
@@ -1393,13 +1355,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
-[6
+[4
 
 
 ]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 111.
+
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
 LaTeX Font Info:    Font shape `OMS/cmr/m/sl' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 112.
- [7]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 111.
+ [5]
 Package epstopdf Info: Source file: <Tunnel_implied_survival_proba.eps>
 (epstopdf)                    date: 2014-02-28 17:39:57
 (epstopdf)                    size: 10371 bytes
@@ -1409,37 +1376,66 @@ d-to.pdf>
 (epstopdf)                    size: 7989 bytes
 (epstopdf)             Command: <repstopdf --outfile=Tunnel_implied_survival_pr
 oba-eps-converted-to.pdf Tunnel_implied_survival_proba.eps>
-(epstopdf)             \includegraphics on input line 156.
+(epstopdf)             \includegraphics on input line 160.
 Package epstopdf Info: Output file is already uptodate.
 
-<Tunnel_implied_survival_proba-eps-converted-to.pdf, id=154, 681.54625pt x 439.
+<Tunnel_implied_survival_proba-eps-converted-to.pdf, id=120, 681.54625pt x 439.
 6425pt>
 File: Tunnel_implied_survival_proba-eps-converted-to.pdf Graphic file (type pdf
 )
  <use Tunnel_implied_survival_proba-eps-converted-to.pdf>
 Package pdftex.def Info: Tunnel_implied_survival_proba-eps-converted-to.pdf use
-d on input line 156.
+d on input line 160.
 (pdftex.def)             Requested size: 375.57782pt x 242.2737pt.
- [8]
-Underfull \hbox (badness 10000) in paragraph at lines 163--167
+ [6]
+Underfull \hbox (badness 10000) in paragraph at lines 167--171
 
  []
 
-<cotation-18-08-2005.pdf, id=162, 473.4719pt x 397.27692pt>
+<cotation-18-08-2005.pdf, id=128, 473.4719pt x 397.27692pt>
 File: cotation-18-08-2005.pdf Graphic file (type pdf)
 
 <use cotation-18-08-2005.pdf>
-Package pdftex.def Info: cotation-18-08-2005.pdf used on input line 171.
+Package pdftex.def Info: cotation-18-08-2005.pdf used on input line 175.
 (pdftex.def)             Requested size: 328.6279pt x 275.7399pt.
- [9 <./Tunnel_implied_survival_proba-eps-converted-to.pdf>] <cotation27-11-2007
-.pdf, id=175, 482.73596pt x 407.64276pt>
+ [7 <./Tunnel_implied_survival_proba-eps-converted-to.pdf>] <cotation27-11-2007
+.pdf, id=141, 482.73596pt x 407.64276pt>
 File: cotation27-11-2007.pdf Graphic file (type pdf)
 
 <use cotation27-11-2007.pdf>
-Package pdftex.def Info: cotation27-11-2007.pdf used on input line 181.
+Package pdftex.def Info: cotation27-11-2007.pdf used on input line 185.
 (pdftex.def)             Requested size: 375.57782pt x 317.1639pt.
- [10 <./cotation-18-08-2005.pdf>]) [11 <./cotation27-11-2007.pdf>] (./rapport.l
-of)
+ [8 <./cotation-18-08-2005.pdf>]) [9 <./cotation27-11-2007.pdf>]
+\openout2 = `AIGDataSpreads.aux'.
+
+ (./AIGDataSpreads.tex
+File: cotation-18-08-2005.pdf Graphic file (type pdf)
+ <use cotation-18-08-2005.pdf>
+Package pdftex.def Info: cotation-18-08-2005.pdf used on input line 20.
+(pdftex.def)             Requested size: 375.57782pt x 315.13652pt.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 S
+      ince 28/09/2007 we can see that the credit curve fit well the market c...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+File: cotation27-11-2007.pdf Graphic file (type pdf)
+<use cotation27-11-2007.pdf>
+Package pdftex.def Info: cotation27-11-2007.pdf used on input line 30.
+(pdftex.def)             Requested size: 375.57782pt x 317.1639pt.
+ [10
+
+
+]) [11] (./rapport.lof)
 \tf@lof=\write7
 \openout7 = `rapport.lof'.
 
@@ -1447,25 +1443,26 @@ of)
 \tf@lot=\write8
 \openout8 = `rapport.lot'.
 
- (./rapport.ind) (./rapport.bbl) 
+
+(./rapport.ind) (./rapport.bbl) 
 AED: lastpage setting LastPage
 [12
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 29.
- (./rapport.aux (./Introduction.aux) (./CDS.aux) (./AdmissibleCurve.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 29.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 29.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
+ (./rapport.aux (./CDS.aux) (./AdmissibleCurve.aux) (./AIGDataSpreads.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 133255B910BA3690DA74CB2EC9B5FE52;808.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 29.
+(rerunfilecheck)             Checksum: C477853BC90E3B7277E988B1009612F3;638.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
  ) 
 Here is how much of TeX's memory you used:
- 19155 strings out of 493315
- 327087 string characters out of 6137904
- 422710 words of memory out of 5000000
- 22100 multiletter control sequences out of 15000+600000
+ 19280 strings out of 493315
+ 329233 string characters out of 6137904
+ 424050 words of memory out of 5000000
+ 22226 multiletter control sequences out of 15000+600000
  18694 words of font info for 76 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  63i,12n,60p,418b,624s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1492,10 +1489,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2013/texm
 f-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/texlive/2013/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on rapport.pdf (13 pages, 378404 bytes).
+Output written on rapport.pdf (13 pages, 371841 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
- 38 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 291 PDF objects out of 1000 (max. 8388607)
+ 240 compressed objects within 3 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

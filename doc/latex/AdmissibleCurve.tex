@@ -84,7 +84,7 @@ where :
 \item A and B only depend on current market quotes S, on standard maturities T, on payment dates t and on products characteristics.
 \end{description}
 
-\begin{example}{credit curve based on CDS}
+\begin{example}{Credit curve based on CDS}
   for  the  CDS we  can  conclude  from \ref{eq:1}  that  under  the market  fit
   condition can be expressed as :
   \begin{eqnarray*}
@@ -102,7 +102,6 @@ conditions.
 
 \subsection{Arbitrage-free conditions}
 \label{sec:arbitr-free-cond}
-
 
 \begin{de}[arbitrage-free condition]
   A credit  curve is  said to be  arbitrage-free if the  curve corresponds  to a
@@ -141,6 +140,7 @@ A.Cousin had demonstrate the following proposition :
     Q_{min}(t_0,T_i) &  =\frac{1 - R  - \sum^i_{k=1}  ( (1 -  R) M_k +  S_i N_k)
       Q(t_0,T_{k -1})}{P^D(t_0,T_{i})(1 - R + S_i \delta_{p_i})}\\
   \end{eqnarray*}
+
 with :
 \begin{itemize}
 \item $p_0=1$, $T_0=t_0$ and $P^D(t_0,T_0)=Q(t_0,t_0)=1$
@@ -149,7 +149,11 @@ with :
 \end{itemize}
 \end{prop}
 
-this  bounds can  be  computed recursively.  Will have  a  series of  decreasing
+this bounds can be computed recursively. Knowing that :
+
+
+
+Will have a series of decreasing
 rectangles in wich every cds credit curve should cross.
 \begin{figure}[H]
   \centering
@@ -182,14 +186,4 @@ complete.
   \caption{Credit curve since 28/09/2007 : here in 27/11/2007}
 \end{figure}
 
-\section{My following work}
-\label{sec:my-following-work}
-
-The  applications  of  the  previous  notion seems  to  be  numerous  and  quite
-interesting. Two other applications that I'm still working on them :
-\begin{itemize}
-\item The impact of 2008 crisis on the CDS contracts
-\item The impact of CDS contracts on CVA
-\item Refine the bounds presented on the previous section
-\end{itemize}
 
