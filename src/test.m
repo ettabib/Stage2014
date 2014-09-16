@@ -30,7 +30,8 @@ T  = [ 0 ; T' ];
 S  = data(1,(2:11)) * bp;
 
 %% Test
-[Qmin,Qmax] = Proba_Survie(1:10,data(33,(2:11))' * bp,Recovery,Interest);
+DATE=596;
+[Qmin,Qmax] = Proba_Survie(1:10,data(DATE,(2:11))' * bp,Recovery,Interest);
 Y = [Qmin(2:(n+1)) , Qmax(1:n)];
 figure
 stairs(Y)
@@ -95,3 +96,5 @@ end
 figure
 % plot(TabCurveQmax);
 plot(NormQmax(1:1336));
+%% Ploting all spreads
+plot(var(data(:,2:11),0,2))

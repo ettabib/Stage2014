@@ -116,7 +116,7 @@ for i = 1:Size_a
             P = Proba_survi_CIR(t_scheduled, b, t_pillars, CIR_Param);
             plot(t_scheduled, P);
 
-            %Price = CDS_price(toDate, coupDate, Pillars,  b, OU_Levy_Param, Recovery, Interest);
+            Price = CDS_price(toDate, coupDate, Pillars,  b, OU_Levy_Param, Recovery, Interest);
             %Price.Fair_spread;
 
             %% Plot Cum_sum

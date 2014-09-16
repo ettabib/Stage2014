@@ -1,0 +1,104 @@
+\section{Credit curve for CDS over AIG Data}
+\label{sec:credit-curve-cds}
+
+\paragraph{}
+It's quite obvious that admissible curves  are bounded. A useful idea treated in
+the article of A.cousin \cite{OTRATS}, consist  in finding an absolute bounds on
+the   intervals  $[T_i,T_{i+1}]$.   This  idea   is  treated   also  for   other
+term-structure.\\
+
+\paragraph{}
+The market fit conditions include $n$ equations for $n$ unknowns $Q(t_{p_i})_{i\in[1,n]}$ :
+\begin{eqnarray*}
+  \label{eq:bornes:1}
+  S_i \sum^{p_i}_{k=1}\delta_kP^D(t_0,t_k)Q(t_0,t_k) - (1 -
+  R)P^D(t_0,T)Q(t_0,T) & \\
+  + (1 - R)\sum^{p_i}_{k=0}f^D(t_0,t_k)P^D(t_0,t_k)Q(t_0,t_k)\delta t_k & = 1 - R,\ i=1,\dots,n.
+\end{eqnarray*}
+Each equation $(i)$ depends on $i$  variables $Q(T_1),\dots,Q(T_{i})$. So we can proceed by
+a recursion to find the bounds for each $Q(T_{i})$. \\
+\paragraph{}
+By using the arbitrage-free \ref{arbtr-free-inq}
+inequalities   over  equation   (\ref{eq:bornes:1})  we   have  the   following
+proposition :
+\begin{prop}
+  Assume that, at time $t_0$, quoted fair spreads $S_1, \dots ,S_n$ are reliable
+  for  standard  CDS  maturities  $T_1<\dots<T_n.$  For  any  $i=1,\dots,n$  the
+  survival  probability $Q(t_0,T_i)$  associated  with  a market-compatible  and
+  arbitrage-free credit curve is such that:
+  \[
+  Q_{min}(t_0,T_i) \leq Q(t_0,T_i) \leq Q_{max}(t_0,T_i)
+  \]
+
+  where :
+
+  \begin{eqnarray*}
+    Q_{max}(t_0,T_i) & =\frac
+    {1 - R - \sum^{i - 1}_{k=1}( (1 - R) M_k + S_i N_k) Q(t_0,T_{k})}
+    {P^D(t_0,T_{i - 1})(1 - R) + S_i(N_i + \delta_{p_i}P^D(t_0,T_i))}\\
+    Q_{min}(t_0,T_i) &  =\frac{1 - R  - \sum^i_{k=1}  ( (1 -  R) M_k +  S_i N_k)
+      Q(t_0,T_{k -1})}{P^D(t_0,T_{i})(1 - R + S_i \delta_{p_i})}\\
+  \end{eqnarray*}
+
+  with :
+  \begin{itemize}
+  \item $p_0=1$, $T_0=t_0$ and $P^D(t_0,T_0)=Q(t_0,t_0)=1$
+  \item $\forall  i \in 1,\dots,n,\ M_i=P^D(t_0,T_{i-1})-P^D(t_0,T_i)\  and\ N_i =
+    \sum^{p_i-1}_{k=p_{i-1}} \delta_k P^D(t_0,t_k)$ 
+  \end{itemize}
+\end{prop}
+
+\paragraph{}
+This bounds are  not calculable since they depends on  $Q(T_i)$. Instead, we can
+remark    that     $Q_{max}(T_i)$    are     a    decreasing     fonction    of
+$Q(T_k)_{k\in[1,i-1]}$. So  at must  $Q_{min}(T_k)_{k\in[1,i-1]}$ is  lower values
+that $Q(T_k)_{k\in[1,i-1]}$ can takes.
+
+\begin{prop}[\cite{OTRATS}]
+\label{prop:3.2}
+  for each standard CDS maturity, model-free bounds for implied survival probabilities can be computed using the following recursive procedure.
+  For $i=1,\dots,n $
+    \begin{eqnarray*}
+    Q_{max}(T_i) & =\frac
+    {1 - R - \sum^{i - 1}_{k=1}( (1 - R) M_k + S_i N_k) Q_{min}(T_{k})}
+    {P^D(t_0,T_{i - 1})(1 - R) + S_i(N_i + \delta_{p_i}P^D(t_0,T_i))}\\
+    Q_{min}(T_i) &  =\frac{1 - R  - \sum^i_{k=1}  ( (1 -  R) M_k +  S_i N_k)
+      Q_{max}(T_{k -1})}{P^D(t_0,T_{i})(1 - R + S_i \delta_{p_i})}\\
+  \end{eqnarray*}
+
+\end{prop}
+
+
+\paragraph{}
+This  last proposition  can be  used  to identify  a union  of rectangles  $\cup
+\mathcal{R}_i$   that    are   defined    by   the points   :
+$\{\left(Q_{max}(T_{i}),T_{i}\right);\left(Q_{min}(T_{i+1}),T_{i}\right)\}$
+. This  rectangles are well defined  because of the arbitrage  free inequalities
+(\ref{arbtr-free-inq}).  They     also      have     to     be     decreasing
+$Q_{max}(T_{i+1})<Q_{max}(T_i)$ (resp $Q_{min}(T_{i+1})<Q_{min}(T_i)$). 
+\paragraph{}
+The  effectiveness  of  borders  can  be  measured by  the  length  of  the  gap
+$G_i=Q_{max}(T_i)-Q_{min}(T_i)$ :
+
+ \begin{center}
+   \begin{tikzpicture}
+     \coordinate  (a) at  (0,1); \coordinate  (b) at  (1,1); \coordinate  (c) at
+     (1,0.3);  \coordinate   (d)  at   (2,0.3);  \coordinate  (e)   at  (2,1.3);
+     \coordinate (f)  at (1,1.3); \coordinate  (g) at (1,2); \coordinate  (h) at
+     (0,2);
+
+     \draw[color=blue]   (a)    --   (b);   \draw[color=blue]   (b)    --   (c);
+     \draw[color=blue]   (c)    --   (d);   \draw[color=blue]   (d)    --   (e);
+     \draw[color=blue]   (e)    --   (f);   \draw[color=blue]   (f)    --   (g);
+     \draw[color=blue]   (g)    --   (h);   \draw[color=blue]   (h)    --   (a);
+     \draw[color=red] (b) -- (f); \draw[color=red,->] (2,2) -- ($(b)!0.5!(f)$) ;
+     \draw (2.2,2.2) node {gap}; \draw (h) .. controls (b) and (f) .. (d);
+
+   \end{tikzpicture}
+
+ \end{center}
+
+
+
+
+

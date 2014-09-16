@@ -59,7 +59,8 @@ amount until $T$. \\
     \draw[xshift=-6cm,dashed]   (9,0)    -- (11.5,0);
     \draw[xshift=-6cm]          (11.5,0) -- (14.5,0);
     \draw[xshift=-6cm,dashed]   (14.5,0) -- (17.5,0);
-    \draw[->,xshift=-6cm]       (17.5,0) -- (18.5,0);
+    \draw[->,xshift=-6cm] (17.5,0) -- (18.5,0);
+
   \end{tikzpicture}
   \caption{In the case of no default}
 \end{figure}
@@ -90,6 +91,25 @@ amount until $T$. \\
 \end{figure}
 
 
+
+\begin{example}  In the  market place,  the  spreads are  presented for  several
+  maturities, as we can see in the  following example. The legs then are emitted
+  every 3 months ( i.e $\delta t = \frac{1}{4}$ ) :
+
+    \begin{figure}[H]
+      \centering
+       \begin{tabular}[H]{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+      \hline
+      Maturity (year) & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+      \hline
+      CDS spread (bp) & 28,125 & 35,33 & 42,96 & 51,815 & 57,15 & 58,23 & 58,795 \\ 
+      \hline
+    \end{tabular}
+\\
+    \caption{\it A CDS spread cotation from AIG on 21/04/2010}
+    \end{figure}
+
+\end{example}
 The  floating  part payed  by  the  protection  seller  depends on  the  default
 condition of  the underlying before the  maturity.  In the case  of default, the
 seller will  refund to the  buyer a  part $R$ of  the nominal, depending  on the
@@ -104,20 +124,20 @@ equalizing the expected value of the two previous cash flows.\\
 
 Let's specify first some notations :
 \begin{description}
-\item[$\tau$] the underlying default date.
-\item[$R$] his recovery rate wich is a predictable process of $[0,1]$
-\item[$T_0$] =0 the CDS signature date
-\item[$T$] the maturity of the CDS
-\item[$t_i$] The  payment dates  of the buyer  where $\Delta  t=t_i-t_{i-1}$ are
+\item[\textbf{$\tau$}] The underlying default date.
+\item[\textbf{$R$}] His recovery rate wich is a predictable process of $[0,1]$
+\item[\textbf{$T_0$}] =0 The CDS signature date
+\item[\textbf{$T$}] The maturity of the CDS
+\item[\textbf{$t_i$}] The  payment dates  of the buyer  where $\delta  t=t_i-t_{i-1}$ are
   equal $\forall i \in 1,\dots,n$
-\item[$\beta(t)$] an index in which $t\in[t_{\beta(t)-1},t_{\beta(t)}]$.
-\item[r] the short rate and $D(t,T)=\exp(-\int_t^Tr_sds)$
+\item[\textbf{$\beta(t)$}] An index in which $t\in[t_{\beta(t)-1},t_{\beta(t)}]$.
+\item[\textbf{r}] The short rate and $P^D(t,T)=\exp(-\int_t^Tr_sds)$
 \end{description}
 
 For the seller, the future cash flow that he will \textbf{receive} at $t<T\wedge\tau$ :
 \[
 s\left\{(T_{\beta(t)}-t)P^D(t,T_{\beta(t)})\mathds{1}_{\tau>T_{\beta(t)}}+
-\sum^n_{i=\beta(t)+1}\Delta                                                    t
+\sum^n_{i=\beta(t)+1}\delta_k
 P^D(t,t_i)\mathds{1}_{\tau>t_i}+(\tau-T_{\beta(\tau)-1}P^D(t,\tau)\mathds{1}_{\tau
   \leq
   T})\right\}
@@ -132,20 +152,51 @@ Instead the seller will pay
 \[
 \mathds{1}_{\tau \leq T}P^D(t,\tau)(1-R)
 \]
-We have then at $t=t_0=0$ the following result :
+We have then at $t=t_0$ the following result :
 
 \begin{equation}
   \label{eq:1}
-s\mathbb{E}_{\mathbb{Q}}\left[\mathds{1}_{\tau \leq T}(1-R)P^D(t_0,\tau)\right]=
-\mathbb{E}_\mathbb{Q}\left[\int_t^T\mathds{1}_{\tau>u}P^D(t,u)du\right]
-  
+S  \mathbb{E}_{\mathbb{P}}\left[\mathds{1}_{\tau \leq T}(1-R)P^D(t_0,\tau)\right]=
+\mathbb{E}_\mathbb{P}\left[\int_{t_0}^T\mathds{1}_{\tau>u}P^D(t,u)du\right]  
 \end{equation}
+where $\mathbb{P}$ is a free-risk probability.\\
 
 
-where $\mathbb{Q}$ is a free-risk probability.
+Let's introduce the following probability , called {\it survival probability} : 
+\[
+\mathbb{Q}(t) = P(\tau > t)
+\]
+\begin{example}[NB]
+the corresponding  path of $\mathbb{Q}(t)$ is  called {\it survival curve  } or
+{\it credit curve}.
+  
+\end{example}
+then  equation \ref{eq:1}  can  be written  as following  (  under the  survival
+probability ):
+\begin{center}
+  \begin{equation}
+  \label{eq:2}
+S  \mathbb{E}_\mathbb{Q}\left[\int_{t_0}^TP^D(t,u)du\right]= 
+  \mathbb{E}_{\mathbb{Q}}\left[(1-R)P^D(t_0,\tau)\right]
+\end{equation}
+\end{center}
+A more practical  expression of the last equation \ref{eq:2}  can be obtained by
+approximating the integrals involved :
+
+\begin{center}
+\fbox{
+  \begin{equation}
+    \label{eq:3}
+    S  \sum_{k=1}^{n} \delta_k P^D(t_0,t_k)Q(t_0,t_k) = -(1 - R) \int_{t_0} ^ T P^D(t_0,t)dQ(t_0,t)
+  \end{equation}
+}
+\end{center}
 
 
 
+Several  financial calculations  involves  knowing the  credit  curve. For  this
+reason,  we will  need a  \textit{yield-curve construction  method} since the number  of
+market isn't sufficient for a good curve approximation.\\
 
 
 

@@ -1,0 +1,19 @@
+%!tikz editor 1.0
+\documentclass{article}
+\usepackage{tikz}
+\usepackage[graphics, active, tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+
+%!tikz preamble begin
+
+%!tikz preamble end
+
+
+\begin{document}
+%!tikz source begin
+\begin{tikzpicture}
+\coordinate (a) at (0,0);\coordinate (b) at (0,1);\coordinate (c) at (1,1);\coordinate (d) at (1,0);\coordinate (e) at (5,0);\coordinate (f) at (6,0);\coordinate (g) at (6,1);\coordinate (h) at (5,1);\coordinate (i) at (3,3);\draw[color=blue]   (a)    --   (b); \draw[color=blue]   (b)    --   (c); \draw[color=blue]   (c)    --   (d); \draw[color=blue]   (d)    --   (a); \draw[color=blue]   (e)    --   (f); \draw[color=blue]   (f)    --   (g); \draw[color=blue]   (g)    --   (h); \draw[color=blue]   (h)    --   (e); \draw[color=blue]  (i) ellipse [x radius=1.5cm, y radius=0.5cm]  node {seller};
+\end{tikzpicture}
+%!tikz source end
+
+\end{document}

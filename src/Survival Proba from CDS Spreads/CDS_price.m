@@ -1,4 +1,3 @@
-
 function res = CDS_price(pricing_date, next_coupon_date, pillars,  intensities, Recovery, Interest, Intensity_model, Param)
 % --------------------------------------------------------------------------------------------------
 % Compute Default Leg, Unitary Premium Leg and Fair Spread for a CDS with

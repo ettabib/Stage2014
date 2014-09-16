@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.19)  7 SEP 2014 20:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.19)  16 SEP 2014 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1069,7 +1069,11 @@ Adding the global options:
 to your \documentclass declaration may fix this.
 Try typing  <return>  to proceed.
 
-(./rapport.aux (./CDS.aux) (./AdmissibleCurve.aux) (./AIGDataSpreads.aux))
+(./rapport.aux (./CDS.aux) (./AdmissibleCurve.aux
+
+LaTeX Warning: Label `eq:2' multiply defined.
+
+) (./Bornes.aux) (./ApplicationBornes.aux) (./AIGDataSpreads.aux))
 \openout1 = `rapport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -1203,7 +1207,7 @@ LaTeX Info: Redefining \nameref on input line 10.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./title.tex <./isfa.png, id=45, 301.125pt x 299.1175pt>
+(./title.tex <./isfa.png, id=64, 301.125pt x 299.1175pt>
 File: ./isfa.png Graphic file (type png)
  <use ./isfa.png>
 Package pdftex.def Info: ./isfa.png used on input line 3.
@@ -1258,30 +1262,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--42
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--98
-
- []
-
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 113--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
 
  []
 
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 119.
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 139.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
 ! Undefined control sequence.
-l.128 \int_t^{T\wedget
+l.148 \int_t^{T\wedget
                       }sP^D(t,u)du
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1289,40 +1293,28 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 161--163
+
+ []
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 183.
+
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.141 
-      
+l.192 }
+       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-! Display math should end with $$.
-<to be read again> 
-                   \par 
-l.141 
-      
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.142 \end{equation}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! You can't use `\eqno' in vertical mode.
+! You can't use `\eqno' in math mode.
 \endmathdisplay@a ...\df@tag \@empty \else \veqno 
                                                   \alt@tag \df@tag \fi \ifx ...
-l.142 \end{equation}
-                    
+l.192 }
+       
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
@@ -1331,89 +1323,318 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.142 \end{equation}
-                    
+l.192 }
+       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.142 \end{equation}
-                    
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
 
-) [3]
+Underfull \hbox (badness 10000) in paragraph at lines 197--200
+
+ []
+
+) [4]
 \openout2 = `AdmissibleCurve.aux'.
 
  (./AdmissibleCurve.tex
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 8.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--19
 
  []
 
-[4
+[5
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 111.
-
- (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
 LaTeX Font Info:    Font shape `OMS/cmr/m/sl' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 111.
- [5]
-Package epstopdf Info: Source file: <Tunnel_implied_survival_proba.eps>
-(epstopdf)                    date: 2014-02-28 17:39:57
-(epstopdf)                    size: 10371 bytes
-(epstopdf)             Output file: <Tunnel_implied_survival_proba-eps-converte
-d-to.pdf>
-(epstopdf)                    date: 2014-08-25 10:31:22
-(epstopdf)                    size: 7989 bytes
-(epstopdf)             Command: <repstopdf --outfile=Tunnel_implied_survival_pr
-oba-eps-converted-to.pdf Tunnel_implied_survival_proba.eps>
-(epstopdf)             \includegraphics on input line 160.
-Package epstopdf Info: Output file is already uptodate.
-
-<Tunnel_implied_survival_proba-eps-converted-to.pdf, id=120, 681.54625pt x 439.
-6425pt>
-File: Tunnel_implied_survival_proba-eps-converted-to.pdf Graphic file (type pdf
-)
- <use Tunnel_implied_survival_proba-eps-converted-to.pdf>
-Package pdftex.def Info: Tunnel_implied_survival_proba-eps-converted-to.pdf use
-d on input line 160.
-(pdftex.def)             Requested size: 375.57782pt x 242.2737pt.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 117.
  [6]
-Underfull \hbox (badness 10000) in paragraph at lines 167--171
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
 
  []
 
-<cotation-18-08-2005.pdf, id=128, 473.4719pt x 397.27692pt>
-File: cotation-18-08-2005.pdf Graphic file (type pdf)
+[7]
+! Missing delimiter (. inserted).
+<to be read again> 
+                   {
+l.214 ...m $\forall x \in E$, the set $A(x)=\left{
+                                                   f(x),f \in A\right}$ is r...
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
 
-<use cotation-18-08-2005.pdf>
-Package pdftex.def Info: cotation-18-08-2005.pdf used on input line 175.
-(pdftex.def)             Requested size: 328.6279pt x 275.7399pt.
- [7 <./Tunnel_implied_survival_proba-eps-converted-to.pdf>] <cotation27-11-2007
-.pdf, id=141, 482.73596pt x 407.64276pt>
-File: cotation27-11-2007.pdf Graphic file (type pdf)
+! Missing } inserted.
+<inserted text> 
+                }
+l.214 ..., the set $A(x)=\left{ f(x),f \in A\right
+                                                  }$ is relatively
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-<use cotation27-11-2007.pdf>
-Package pdftex.def Info: cotation27-11-2007.pdf used on input line 185.
-(pdftex.def)             Requested size: 375.57782pt x 317.1639pt.
- [8 <./cotation-18-08-2005.pdf>]) [9 <./cotation27-11-2007.pdf>]
+! Missing delimiter (. inserted).
+<to be read again> 
+                   }
+l.214 ... the set $A(x)=\left{ f(x),f \in A\right}
+                                                  $ is relatively
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.214 ... the set $A(x)=\left{ f(x),f \in A\right}
+                                                  $ is relatively
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+\enit@endenumerate ->\enit@after 
+                                 \endlist \ifx \enit@series \relax \else \if...
+l.216   \end{enumerate}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@endenumerate ...\else \ifnum \enit@resuming 
+                                                  =\@ne \enit@setresumekeys ...
+l.216   \end{enumerate}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.216   \end{enumerate}
+                       
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.216   \end{enumerate}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.216   \end{enumerate}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.216   \end{enumerate}
+                       
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> enit@resume@series@\enit@series 
+                                           
+l.216   \end{enumerate}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@endenumerate ...t \fi \ifnum \enit@resuming 
+                                                  =\thr@@ \enit@setresumekey...
+l.216   \end{enumerate}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.216   \end{enumerate}
+                       
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.216   \end{enumerate}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.216   \end{enumerate}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.216   \end{enumerate}
+                       
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+Overfull \hbox (5.29988pt too wide) in paragraph at lines 217--217
+[] 
+ []
+
+
+Overfull \hbox (5.29988pt too wide) in paragraph at lines 217--217
+ | 
+ []
+
+) [8]
+\openout2 = `Bornes.aux'.
+
+ (./Bornes.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--20
+
+ []
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 22.
+
+[9
+
+
+]) [10]
+\openout2 = `ApplicationBornes.aux'.
+
+ (./ApplicationBornes.tex
+Package epstopdf Info: Source file: <dynamic_spreads.eps>
+(epstopdf)                    date: 2014-09-16 11:00:24
+(epstopdf)                    size: 95020 bytes
+(epstopdf)             Output file: <dynamic_spreads-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-09-16 11:00:30
+(epstopdf)                    size: 59012 bytes
+(epstopdf)             Command: <repstopdf --outfile=dynamic_spreads-eps-conver
+ted-to.pdf dynamic_spreads.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+
+<dynamic_spreads-eps-converted-to.pdf, id=207, 1278.7775pt x 652.4375pt>
+File: dynamic_spreads-eps-converted-to.pdf Graphic file (type pdf)
+
+<use dynamic_spreads-eps-converted-to.pdf>
+Package pdftex.def Info: dynamic_spreads-eps-converted-to.pdf used on input lin
+e 15.
+(pdftex.def)             Requested size: 375.57782pt x 191.62119pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--27
+
+ []
+
+Package epstopdf Info: Source file: <spreads_volatility.eps>
+(epstopdf)                    date: 2014-09-16 14:17:48
+(epstopdf)                    size: 16901 bytes
+(epstopdf)             Output file: <spreads_volatility-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-09-16 14:21:33
+(epstopdf)                    size: 13348 bytes
+(epstopdf)             Command: <repstopdf --outfile=spreads_volatility-eps-con
+verted-to.pdf spreads_volatility.eps>
+(epstopdf)             \includegraphics on input line 37.
+Package epstopdf Info: Output file is already uptodate.
+<spreads_volatility-eps-converted-to.pdf, id=208, 1284.8pt x 652.4375pt>
+File: spreads_volatility-eps-converted-to.pdf Graphic file (type pdf)
+
+<use spreads_volatility-eps-converted-to.pdf>
+Package pdftex.def Info: spreads_volatility-eps-converted-to.pdf used on input 
+line 37.
+(pdftex.def)             Requested size: 375.57782pt x 190.72519pt.
+ [11
+
+
+ <./dynamic_spreads-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <cotation_27_11_2007.eps>
+(epstopdf)                    date: 2014-09-16 16:24:50
+(epstopdf)                    size: 9270 bytes
+(epstopdf)             Output file: <cotation_27_11_2007-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-09-16 16:25:48
+(epstopdf)                    size: 8394 bytes
+(epstopdf)             Command: <repstopdf --outfile=cotation_27_11_2007-eps-co
+nverted-to.pdf cotation_27_11_2007.eps>
+(epstopdf)             \includegraphics on input line 52.
+Package epstopdf Info: Output file is already uptodate.
+
+<cotation_27_11_2007-eps-converted-to.pdf, id=226, 1284.8pt x 652.4375pt>
+File: cotation_27_11_2007-eps-converted-to.pdf Graphic file (type pdf)
+
+<use cotation_27_11_2007-eps-converted-to.pdf>
+Package pdftex.def Info: cotation_27_11_2007-eps-converted-to.pdf used on input
+ line 52.
+(pdftex.def)             Requested size: 375.57782pt x 190.72519pt.
+) [12 <./spreads_volatility-eps-converted-to.pdf> <./cotation_27_11_2007-eps-co
+nverted-to.pdf>]
 \openout2 = `AIGDataSpreads.aux'.
 
- (./AIGDataSpreads.tex
-File: cotation-18-08-2005.pdf Graphic file (type pdf)
- <use cotation-18-08-2005.pdf>
-Package pdftex.def Info: cotation-18-08-2005.pdf used on input line 20.
-(pdftex.def)             Requested size: 375.57782pt x 315.13652pt.
 
+(./AIGDataSpreads.tex
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1421,21 +1642,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.24 S
+l.16 S
       ince 28/09/2007 we can see that the credit curve fit well the market c...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+<cotation27-11-2007.pdf, id=248, 482.73596pt x 407.64276pt>
 File: cotation27-11-2007.pdf Graphic file (type pdf)
+
 <use cotation27-11-2007.pdf>
-Package pdftex.def Info: cotation27-11-2007.pdf used on input line 30.
+Package pdftex.def Info: cotation27-11-2007.pdf used on input line 20.
 (pdftex.def)             Requested size: 375.57782pt x 317.1639pt.
- [10
+) [13
 
 
-]) [11] (./rapport.lof)
+ <./cotation27-11-2007.pdf>] [14]
+(./rapport.lof)
 \tf@lof=\write7
 \openout7 = `rapport.lof'.
 
@@ -1443,56 +1667,63 @@ Package pdftex.def Info: cotation27-11-2007.pdf used on input line 30.
 \tf@lot=\write8
 \openout8 = `rapport.lot'.
 
+ (./rapport.ind) (./rapport.bbl)
 
-(./rapport.ind) (./rapport.bbl) 
 AED: lastpage setting LastPage
-[12
+[15
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
- (./rapport.aux (./CDS.aux) (./AdmissibleCurve.aux) (./AIGDataSpreads.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
+ (./rapport.aux (./CDS.aux) (./AdmissibleCurve.aux) (./Bornes.aux)
+(./ApplicationBornes.aux) (./AIGDataSpreads.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: C477853BC90E3B7277E988B1009612F3;638.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
+(rerunfilecheck)             Checksum: 0B5DFF990E4E91B4D608C35813B2507C;1020.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 19280 strings out of 493315
- 329233 string characters out of 6137904
- 424050 words of memory out of 5000000
- 22226 multiletter control sequences out of 15000+600000
- 18694 words of font info for 76 fonts, out of 8000000 for 9000
+ 19391 strings out of 493315
+ 330735 string characters out of 6137904
+ 424924 words of memory out of 5000000
+ 22274 multiletter control sequences out of 15000+600000
+ 20876 words of font info for 85 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  63i,12n,60p,418b,624s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/tex
-live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
-e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
-013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/20
-13/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/201
-3/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2013/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2013/texm
-f-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/texlive/2013/tex
-mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on rapport.pdf (13 pages, 371841 bytes).
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2013/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2013/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2013/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2013/texmf-d
+ist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/texlive/2013/texmf-
+dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on rapport.pdf (16 pages, 471309 bytes).
 PDF statistics:
- 291 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
- 34 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 381 PDF objects out of 1000 (max. 8388607)
+ 323 compressed objects within 4 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 158 words of extra memory for PDF output out of 10000 (max. 10000000)
 

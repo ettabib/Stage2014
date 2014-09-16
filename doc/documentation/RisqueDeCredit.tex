@@ -7,17 +7,18 @@
 \maketitle
 \section{Modele de Merton}
 \label{sec:modele-de-merton}
-La dette de l'entreprise est assimilable a une obligation zero-coupon de nominale L et de maturite T.
-\begin{tabular}{t|l}
+La dette de l'entreprise est assimilable a une obligation zero-coupon de nominale L et de maturite T.\\
+\begin{center}
+  \begin{tabular}{t|l}
 
-  Actifs & Passifs \\
-\hline
-  $V_t$ &  $E_t \longrightarrow \text{Fonds propres} $ \\
-   & $D_t \longrightarrow \text{dette}$ \\
-\end{tabular}
-
+    Actifs & Passifs \\
+    \hline
+    $V_t$ &  $E_t \longrightarrow \text{Fonds propres} $ \\
+    & $D_t \longrightarrow \text{dette}$ \\
+  \end{tabular}
+\end{center}
 instant de defaut : 
 \[
-\tho = T \mathbb{1}_{V_T < L} + \infty \mathbb{1}_{V_T \geq L}
+\tau = T \mathds{1}_{V_T < L} + \infty \mathds{1}_{V_T \geq L}
 \]
 \end{document}

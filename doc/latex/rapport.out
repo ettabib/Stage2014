@@ -1,10 +1,15 @@
 \BOOKMARK [1][-]{section.1}{1 Credit default swap \(CDS\)}{}% 1
 \BOOKMARK [1][-]{section.2}{2 Admissible Term Structures}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{2.1 Market fit condition}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{2.2 Arbitrage-free conditions}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{2.3 Application on AIG CDS data spreads}{section.2}% 5
-\BOOKMARK [1][-]{section.3}{3 AIG CDS data over 2005 - 2010}{}% 6
-\BOOKMARK [2][-]{subsection.3.1}{3.1 The data dynamic}{section.3}% 7
-\BOOKMARK [1][-]{figure.8}{List of Figures}{}% 8
-\BOOKMARK [1][-]{figure.8}{List of Tables}{}% 9
-\BOOKMARK [1][-]{figure.8}{Index}{}% 10
+\BOOKMARK [2][-]{subsection.2.1}{2.1 Notation}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{2.2 Market fit condition}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{2.3 Arbitrage-free conditions}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{2.4 The geometrical side of admissible curves}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{3 Credit curve for CDS over AIG Data}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{3.1 Application on AIG Datas}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{3.2 Dynamic of bounds }{section.3}% 9
+\BOOKMARK [1][-]{section.4}{4 AIG CDS data over 2005 - 2010}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{4.1 The data dynamic}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{4.2 Curve reconstruction}{section.4}% 12
+\BOOKMARK [1][-]{subsection.4.2}{List of Figures}{}% 13
+\BOOKMARK [1][-]{subsection.4.2}{List of Tables}{}% 14
+\BOOKMARK [1][-]{subsection.4.2}{Index}{}% 15
