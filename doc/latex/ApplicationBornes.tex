@@ -28,17 +28,23 @@ increase her spreads in presence of a hight risk of bankruptcy. \\
 \paragraph{}
 In almost all  quotations, spread is an increasing function  of time. Obviously,
 the more  years protection recover, higher  is the risk that  the protecter most
-care. But how much  would the company be vulnerable to  maturity ? The following
-graphic shows the spreads volatility over the available maturities :
+care. But how much would the company be vulnerable to maturity ?
+\paragraph{}
+To do so, we computed the empirical variance of each spread quotation. 
+ The following
+graphic shows the spreads variances over the available maturities :
 
 \begin{figure}[H]
   \centering
 \label{fig:6}
   \includegraphics[width=0.8\textwidth]{spreads_volatility}
-  \caption{Quoted spreads volatility }
+  \caption{\it Quoted spreads variance }
 \end{figure}
 
-The company in fact, in a crisis period, is too vulnerable to the maturity. 
+In the beginning of \textit{2005-2006} we  can remark a complete indifference of
+the  company against  maturity :  this reflect  that the \textit{ subprime crisis}  where
+totaly unpredictable. Once  the crisis was established, the  company changed its
+policy and became too vulnerable to the maturity.
 
 \subsection{Dynamic of bounds }
 \label{sec:dynamic-bounds-}
@@ -67,4 +73,24 @@ present an arbitrage opportunity :
   \label{fig:8}
 \end{figure}
 
+\paragraph{}
+This   arbitrage   opportunities   remain   from  {\it   16/08/2005}   to   {\it
+  28/09/2007}. After this date, the market remained obscur for arbitrage opportunities.
+\paragraph{}
+The precision  of bounds  is also  affected by crisis  as we  can see  in figure
+\ref{fig:9} :
 
+
+\subsection{Bounds Dynamic}
+\label{sec:bounds-effectiveness}
+
+In order  to see how  bounds changes over spreads  quotation, we plot  the width
+$Q_{max}-Q_{min}$ :
+\begin{figure}[H]
+  \centering
+  \includegraphics[angle=-90,width=0.8\textwidth]{bounds_Dynamic_T_4}
+  \caption{\it Negative correlation between Qmax(T) and S for the maturity T = 4 years}
+  \label{fig:10}
+\end{figure}
+
+The results of the figure (\ref{fig:10}) remain true for all maturities.

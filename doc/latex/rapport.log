@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.19)  16 SEP 2014 16:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.19)  23 SEP 2014 12:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1207,7 +1207,7 @@ LaTeX Info: Redefining \nameref on input line 10.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./title.tex <./isfa.png, id=53, 301.125pt x 299.1175pt>
+(./title.tex <./isfa.png, id=57, 301.125pt x 299.1175pt>
 File: ./isfa.png Graphic file (type png)
  <use ./isfa.png>
 Package pdftex.def Info: ./isfa.png used on input line 3.
@@ -1578,7 +1578,7 @@ ted-to.pdf dynamic_spreads.eps>
 (epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
 
-<dynamic_spreads-eps-converted-to.pdf, id=193, 1278.7775pt x 652.4375pt>
+<dynamic_spreads-eps-converted-to.pdf, id=198, 1278.7775pt x 652.4375pt>
 File: dynamic_spreads-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dynamic_spreads-eps-converted-to.pdf>
@@ -1598,14 +1598,14 @@ Package epstopdf Info: Source file: <spreads_volatility.eps>
 (epstopdf)                    size: 13348 bytes
 (epstopdf)             Command: <repstopdf --outfile=spreads_volatility-eps-con
 verted-to.pdf spreads_volatility.eps>
-(epstopdf)             \includegraphics on input line 37.
+(epstopdf)             \includegraphics on input line 40.
 Package epstopdf Info: Output file is already uptodate.
-<spreads_volatility-eps-converted-to.pdf, id=194, 1284.8pt x 652.4375pt>
+<spreads_volatility-eps-converted-to.pdf, id=199, 1284.8pt x 652.4375pt>
 File: spreads_volatility-eps-converted-to.pdf Graphic file (type pdf)
 
 <use spreads_volatility-eps-converted-to.pdf>
 Package pdftex.def Info: spreads_volatility-eps-converted-to.pdf used on input 
-line 37.
+line 40.
 (pdftex.def)             Requested size: 375.57782pt x 190.72519pt.
  [11
 
@@ -1619,16 +1619,18 @@ Package epstopdf Info: Source file: <cotation_27_11_2007.eps>
 (epstopdf)                    size: 8394 bytes
 (epstopdf)             Command: <repstopdf --outfile=cotation_27_11_2007-eps-co
 nverted-to.pdf cotation_27_11_2007.eps>
-(epstopdf)             \includegraphics on input line 52.
+(epstopdf)             \includegraphics on input line 58.
 Package epstopdf Info: Output file is already uptodate.
 
-<cotation_27_11_2007-eps-converted-to.pdf, id=212, 1284.8pt x 652.4375pt>
+<cotation_27_11_2007-eps-converted-to.pdf, id=218, 1284.8pt x 652.4375pt>
 File: cotation_27_11_2007-eps-converted-to.pdf Graphic file (type pdf)
 
 <use cotation_27_11_2007-eps-converted-to.pdf>
 Package pdftex.def Info: cotation_27_11_2007-eps-converted-to.pdf used on input
- line 52.
+ line 58.
 (pdftex.def)             Requested size: 375.57782pt x 190.72519pt.
+ [12 <./spreads_volatility-eps-converted-to.pdf> <./cotation_27_11_2007-eps-con
+verted-to.pdf>]
 Package epstopdf Info: Source file: <cotation-18-08-2005.eps>
 (epstopdf)                    date: 2014-09-16 16:48:32
 (epstopdf)                    size: 9757 bytes
@@ -1637,19 +1639,40 @@ Package epstopdf Info: Source file: <cotation-18-08-2005.eps>
 (epstopdf)                    size: 9083 bytes
 (epstopdf)             Command: <repstopdf --outfile=cotation-18-08-2005-eps-co
 nverted-to.pdf cotation-18-08-2005.eps>
-(epstopdf)             \includegraphics on input line 65.
+(epstopdf)             \includegraphics on input line 71.
 Package epstopdf Info: Output file is already uptodate.
 
-<cotation-18-08-2005-eps-converted-to.pdf, id=214, 1284.8pt x 652.4375pt>
+<cotation-18-08-2005-eps-converted-to.pdf, id=239, 1284.8pt x 652.4375pt>
 File: cotation-18-08-2005-eps-converted-to.pdf Graphic file (type pdf)
 
 <use cotation-18-08-2005-eps-converted-to.pdf>
 Package pdftex.def Info: cotation-18-08-2005-eps-converted-to.pdf used on input
- line 65.
+ line 71.
 (pdftex.def)             Requested size: 375.57782pt x 190.72519pt.
- [12 <./spreads_volatility-eps-converted-to.pdf> <./cotation_27_11_2007-eps-con
-verted-to.pdf>]) [13 <./cotation-18-08-2005-eps-converted-to.pdf>] (./rapport.l
-of)
+
+
+LaTeX Warning: Reference `fig:9' on page 13 undefined on input line 81.
+
+Package epstopdf Info: Source file: <bounds_Dynamic_T_4.eps>
+(epstopdf)                    date: 2014-09-23 12:05:25
+(epstopdf)                    size: 36451 bytes
+(epstopdf)             Output file: <bounds_Dynamic_T_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-09-23 12:05:36
+(epstopdf)                    size: 77832 bytes
+(epstopdf)             Command: <repstopdf --outfile=bounds_Dynamic_T_4-eps-con
+verted-to.pdf bounds_Dynamic_T_4.eps>
+(epstopdf)             \includegraphics on input line 91.
+Package epstopdf Info: Output file is already uptodate.
+<bounds_Dynamic_T_4-eps-converted-to.pdf, id=240, 561.09625pt x 809.0225pt>
+File: bounds_Dynamic_T_4-eps-converted-to.pdf Graphic file (type pdf)
+
+<use bounds_Dynamic_T_4-eps-converted-to.pdf>
+Package pdftex.def Info: bounds_Dynamic_T_4-eps-converted-to.pdf used on input 
+line 91.
+(pdftex.def)             Requested size: 561.09488pt x 809.02054pt.
+ [13 <./cotation-18-08-2005-eps-converted-to.pdf>]) [14 <./bounds_Dynamic_T_4-e
+ps-converted-to.pdf>]
+(./rapport.lof)
 \tf@lof=\write7
 \openout7 = `rapport.lof'.
 
@@ -1657,10 +1680,10 @@ of)
 \tf@lot=\write8
 \openout8 = `rapport.lot'.
 
+ (./rapport.ind) (./rapport.bbl)
 
-(./rapport.ind) (./rapport.bbl) 
 AED: lastpage setting LastPage
-[14
+[15
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
@@ -1670,7 +1693,10 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 32633C06F4880404E895D2C302FFB1A6;791.
+(rerunfilecheck)             Checksum: 82376337119BAD5E2A67138D42CCA53D;859.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1678,10 +1704,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 19375 strings out of 493315
- 330531 string characters out of 6137904
- 424279 words of memory out of 5000000
- 22269 multiletter control sequences out of 15000+600000
+ 19390 strings out of 493315
+ 330853 string characters out of 6137904
+ 423420 words of memory out of 5000000
+ 22277 multiletter control sequences out of 15000+600000
  20876 words of font info for 85 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  63i,12n,60p,418b,624s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1710,10 +1736,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2013/texmf-d
 ist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/texlive/2013/texmf-
 dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on rapport.pdf (15 pages, 463005 bytes).
+Output written on rapport.pdf (16 pages, 541821 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
- 296 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 378 PDF objects out of 1000 (max. 8388607)
+ 318 compressed objects within 4 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 147 words of extra memory for PDF output out of 10000 (max. 10000000)
 

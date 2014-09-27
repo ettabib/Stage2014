@@ -84,7 +84,8 @@ for i=2:(size(data,1)),
     %NormQmax(i-1) = abs(sum(abs(Qmax(1:10)-Qmax(2:11))) - mean(Qmax)); 
 %     NormQmax(i-1) =  var(Qmax,0,1);
 %      NormQmax(i-1) =  mean(Qmax,1);
-    NormQmax(i-1) = mean(Qmax - Qmin);
+    X = (Qmax - Qmin)./Qmax;
+    NormQmax(i-1) = mean(X);
 %     NormQmax(i-1) = mean(data(i,(2:11)));
 end
 % Define the norm : N(C) = sum d - mean (d)
@@ -95,6 +96,7 @@ end
 
 figure
 % plot(TabCurveQmax);
-plot(NormQmax(1:1336));
+plot(1-NormQmax(1:1336));
+title('The precision of the bounds');
 %% Ploting all spreads
 plot(var(data(:,2:11),0,2))
