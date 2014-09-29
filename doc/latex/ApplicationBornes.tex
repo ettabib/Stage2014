@@ -1,4 +1,3 @@
-
 \subsection{Application on AIG Datas}
 \label{sec:appl-aig-datas}
 \paragraph{}
@@ -83,14 +82,44 @@ The precision  of bounds  is also  affected by crisis  as we  can see  in figure
 
 \subsection{Bounds Dynamic}
 \label{sec:bounds-effectiveness}
-
+\paragraph{}
 In order  to see how  bounds changes over spreads  quotation, we plot  the width
 $Q_{max}-Q_{min}$ :
 \begin{figure}[H]
   \centering
   \includegraphics[angle=-90,width=0.8\textwidth]{bounds_Dynamic_T_4}
-  \caption{\it Negative correlation between Qmax(T) and S for the maturity T = 4 years}
+  \caption{\it total matching with the spreads evolution for the maturity T = 4 years}
   \label{fig:10}
 \end{figure}
 
-The results of the figure (\ref{fig:10}) remain true for all maturities.
+The results  of the figure (\ref{fig:10})  remain true for all  maturities. This
+result can be explained by  a positive correlation between $Q_{max}-Q_{min}$ and
+$S_i$, Indeed the following figure shows a typical regression :
+
+
+
+\subsection{CIR model}
+
+In order to see  the influence of the CIR\footnote{ we refere  to the article of
+  A.cousin \& I.Niang chapiter 4.3 \cite{OTRATS}} parameters $(a,\sigma,X_0)$.
+
+\paragraph{}
+The influence of the parameter a seems low :
+
+\begin{figure}[H]
+  \centering 
+    \includegraphics[angle=0,width=0.8\textwidth]{survival_a}
+  \caption{survival curves for the quotation 15/06/2009 with $\sigma = 0.2 \ x_0
+    = 1.6e-6$, rate $R = 40 \%$ , $P^D(t_0,t)=\exp(-R(t-t_0))$}
+  \label{fig:11}
+\end{figure}
+
+the same think for the parameter $s$ :
+
+\begin{figure}[H]
+  \centering 
+    \includegraphics[angle=0,width=0.8\textwidth]{survival_s}
+  \caption{survival curves for the quotation 15/06/2009 with $a = 1 \ x_0
+    = 1.6e-6$, rate $R = 40 \%$ , $P^D(t_0,t)=\exp(-R(t-t_0))$}
+  \label{fig:11}
+\end{figure}
