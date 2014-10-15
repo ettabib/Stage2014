@@ -15,9 +15,9 @@ lambda = 1/Taille_Saut;
 % s = (1);
 
 nb_a = 0;
-nb_s = 10; %nb sigma param
-nb_x0 = 0;
-n_point = 1; %%%%% nombre de points : nb dates de quotation echantillonees
+nb_s = 0; %nb sigma param
+nb_x0 = 10;
+n_point = 10; %%%%% nombre de points : nb dates de quotation echantillonees
 
 
 min_a = 1;
@@ -44,8 +44,6 @@ delta = floor((fin - debut) / n_point); % le pas entre deux points
 %% Assumption on recovery rate and interest rate
 Recovery = 0.40;
 Interest = 0.03;
-%Interest = 0;
-
 Intensity_model = 1; %CIR model
 
 %% Import the data
@@ -57,8 +55,8 @@ raw = raw(1:end,:);
 %load('CDX9_17_Dec_2007.mat'); %Load Index_data containing all relevant information regarding this date
 % and in particular CDS spreads of all consituents at different pillars
 
-toDate = {'16-08-2005'};                                   % today
-coupDate = {'16-08-2005'};                             % first coupon payment date
+toDate = {'16-08-2005'};                          % today
+coupDate = {'16-08-2005'};                        % first coupon payment date
 Pillars = {'16-08-2006' ,  '16-08-2007' ,'16-08-2008', '16-08-2009', '16-08-2010' ,'16-08-2011', '16-08-2012', '16-08-2013' ,'16-08-2014' ,'16-08-2015'};
 % Pillars = datestr(Pillars);
 % Index_AIG = 5;
@@ -72,6 +70,7 @@ Nb_pillars = size(Pillars, 2);
 % Convert cell vector of dates pillars into vectors of real number t_pillars
 % corresponding to lengths between today and pillars dates
 % t_pillars : the vector of maturities
+
 t_pillars = zeros(Nb_pillars, 1);
 for i=1:Nb_pillars
     t_pillars(i) = (datenum(Pillars(i),'dd-mmm-yyyy')-datenum(toDate,'dd-mmm-yyyy'))/365;
@@ -140,26 +139,28 @@ end
 
 
 %% %% Generate the sum of all payoff terms between t and T, all terms discounted back at t, not subject to the counterparty default risk
-Function_Prob =1 - Survival_P{1,1,1,1};
-plot(t_scheduled,Function_Prob);
+Function_Prob = 1 - Survival_P{1,1,1,1};
+%plot(t_scheduled,Function_Prob);
 
 %Distribution function of the underlying
 Distribution_function_Tau1 = 0:0.001:1;
 % Distribution function of the conterparty
 DateQuotation = 1;
-Distribution_function_Tau2 = Function_Prob(DateQuotation,:);
+Distribution_function_Tau2 = Function_Prob;
 T = max(t_scheduled);
 delta = 1/4;
 t = 1/4 * T;
 Payoff_Without_CR = 0;
+
 % bt : the first coupon date over t
 bt = t_scheduled(t_scheduled>t);
 bt = find(t_scheduled==bt(1));
 
+% computing sum S = si * D(t,t_i) * dt , for t_i > t
 S = 0;
 i = bt;
 while (t_scheduled(i) < T)
-   S = S + Discount(t,t_scheduled(bt),Recovery) * CDS_market_spreads(DateQuotation,i) * pas_t;  
-   i = i + 1 ;
+    pi = find(t_pillars==max(t_pillars(t_pillars <= t_scheduled(i))));
+    S = S + Discount(t,t_scheduled(i),Recovery) * CDS_market_spreads(DateQuotation,pi) * pas_t;
+    i = i + 1 ;
 end
-

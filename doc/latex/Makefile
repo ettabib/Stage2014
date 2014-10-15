@@ -39,3 +39,6 @@ view:rapport.pdf
 	@open rapport.pdf
 
 mrproper: clean
+	rm -rf rapport.pdf
+
+

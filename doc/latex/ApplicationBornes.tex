@@ -3,7 +3,11 @@
 \paragraph{}
 In this section we will apply the previous results on quoted spreads data of the
 company  AIG. The  data provided  is  a series  of  CDS quoted  spreads for  the
-maturities $1,\dots,10$ between 16/08/2005 and 30/09/2010.
+maturities $1,\dots,10$ between 16/08/2005 and 30/09/2010 :
+\[
+data\footnote{we note $S_i=S_{i,.}=(S_{i,t})_{t=t_1,\dots,t_n}$, respectively $S_t=S_{.,t}=(S_{i,t})_{i=1,\dots,10}$} = (S_{i,t})_{\ i=1,\dots,10\ (years)\ \mathrm{and}\
+  t=t_1,\dots,t_n(\mathrm{quatation dates})}
+\]
 
 \subparagraph{}
 The first  idea consist on studying  statistically the behavior of  spreads over
@@ -31,7 +35,12 @@ care. But how much would the company be vulnerable to maturity ?
 \paragraph{}
 To do so, we computed the empirical variance of each spread quotation. 
  The following
-graphic shows the spreads variances over the available maturities :
+graphic shows the spreads variances 
+\[
+\mathrm{Empirical\  variance\ for\  a\ quotation\  \mathit{t}} =  Var(S_{.,t}) =
+\frac{1}{n}\sum_{i=1}^{10}(S_{i,t} - \overline{S_{.,t}})^2
+\]
+over the available maturities :
 
 \begin{figure}[H]
   \centering
@@ -76,8 +85,8 @@ present an arbitrage opportunity :
 This   arbitrage   opportunities   remain   from  {\it   16/08/2005}   to   {\it
   28/09/2007}. After this date, the market remained obscur for arbitrage opportunities.
 \paragraph{}
-The precision  of bounds  is also  affected by crisis  as we  can see  in figure
-\ref{fig:9} :
+NB: The precision of bounds, in the meaning of the gap thickness (see \ref{gap}),
+follows the same evolution as the variance.
 
 
 \subsection{Bounds Dynamic}
@@ -94,18 +103,43 @@ $Q_{max}-Q_{min}$ :
 
 The results  of the figure (\ref{fig:10})  remain true for all  maturities. This
 result can be explained by  a positive correlation between $Q_{max}-Q_{min}$ and
-$S_i$, Indeed the following figure shows a typical regression :
+$S_i$. Indeed the following figure shows a typical regression of $Q_{max}$ over $S_i$
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[angle=-90,width=0.8\textwidth]{corr_T_4}
+  \caption{\it total matching with the spreads evolution for the maturity T = 4 years}
+  \label{fig:11}
+\end{figure}
+
+The   same   result   remain   true   for   $Q_{min}$.   We   can   write   then
+$Q_{max}-Q_{min}=\alpha_i  S_{i,.} +  \beta_i$ which  explain  that the  gap of  the
+bounds $G_i  = Q_{max}-Q_{min}$ have the  same evolution as the  Spreads $S_i,.$
+for each maturity $T=1,\dots,10 (years)$
+
 
 
 
 \subsection{CIR model}
+This  section is  the direct  continuity of  the paragraph  4 of  the article  :
+A.cousin \& I.Niang section 4 \cite{OTRATS}.\\
 
-In order to see  the influence of the CIR\footnote{ we refere  to the article of
-  A.cousin \& I.Niang chapiter 4.3 \cite{OTRATS}} parameters $(a,\sigma,X_0)$.
 
 \paragraph{}
-The influence of the parameter a seems low :
-
+The  construction of  admissible term-structure  is based  on CIR(Cox  Ingersoll
+Ross) model 
+\[
+dX_t=a(b(t) - X_t)dt + \sigma \sqrt(X_t)dW_t
+\]
+or a Levy-driven Ornstein-Uhlenbeck process(Levy-driven OU)
+\[
+dX_t= a(b(t) - X_t)dt + \sigma dY_{ct}
+\]
+where $Y_{ct}$ is a Levy process. \\
+In our furthur applications we will use the CIR model. In order to see the influence of the CIR\footnote{ we refere to the article of
+}   parameters   $(a,\sigma,X_0)$.  We've   varied   the   parameter  $a$   over
+$[0.01,2.00]$. We plot  then the survival probabilities, solution  of CIR model,
+for a fixed $\sigma,X_0,R$ :
 \begin{figure}[H]
   \centering 
     \includegraphics[angle=0,width=0.8\textwidth]{survival_a}
@@ -114,7 +148,7 @@ The influence of the parameter a seems low :
   \label{fig:11}
 \end{figure}
 
-the same think for the parameter $s$ :
+the same thing for the parameter $s$ :
 
 \begin{figure}[H]
   \centering 

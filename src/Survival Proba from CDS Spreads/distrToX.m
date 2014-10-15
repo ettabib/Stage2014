@@ -9,12 +9,6 @@
 function [ X ] = distrToX(F,t)
 i = 1;
 L = size(F,2);
-u = rand();
-
-while (F(i) < u  && i < L )
-    i = i+1;
-end
-
-X = t(i);
-
+u = rand() * min(max(F),1) + max(min(F),0);
+X = t(find(F==max(F(F < u)))+1);
 end
